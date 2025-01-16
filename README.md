@@ -4,7 +4,7 @@
 ### Links
 
 - Solution URL: [Github](https://github.com/vinay-parit/four-card)
-- Live Site URL: [Netlify Link](https://qrcode-vitthal.netlify.app/)
+- Live Site URL: [Netlify Link](https://four-card-seven-peach.vercel.app/)
 
 ### ScreenShot
 
