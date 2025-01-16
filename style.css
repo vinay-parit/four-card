@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --font-family: "Poppins", serif;
+    --font-family2: "Poppins", serif;
+    --font-family3: "Poppins", serif;
+}
+
+header{
+    background-color: var(--Very-Light-Gray);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.head{
+    font-family: var(--font-family2);
+    color: var(--Grayish-Blue);
+    margin-top: 40px;
+}
+
+.head>h1{
+    font-family: var(--font-family);
+    font-weight: 1px;
+}
+.head>h1>.rel{
+    font-weight: 350;
+    color: var(--Very-Dark-Blue);
+}
+
+.head>h1>span{
+    color: var(--Very-Dark-Blue);
+    font-family: var(--font-family);
+}
+.head>p{
+    font-family: var(--font-family);
+    color: var(--Grayish-Blue);
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.box1,.box2,.box3,.box4{
+    position: relative;
+     width: 350px;
+    height: 200px;
+     padding-top: 20px;
+    box-shadow: 10px 20px 50px var(--Grayish-Blue);
+}
+
+.box1{
+    position: absolute;
+    left: 11%;
+    top: 50%;
+    padding-left:30px ;
+    border-radius: 5px;
+    border-top: solid 5px var(--Cyan);
+}
+
+.box1>p>img{
+   position: absolute ;
+   top: 60%;
+   left: 75%;
+   /* width: 100px; */
+
+
+}
+.box1>h2{
+    font-family: var(--font-family3);
+    color: var(--Very-Dark-Blue);
+}
+.box1>p{
+    font-family: var(--font-family);
+    color: var(--Grayish-Blue);
+    padding-top: 10px;
+    font-size: 14px;
+}
+.box2{
+    position: absolute;
+    left: 38%;
+    bottom: 40%;
+    padding-left: 30px;
+    border-radius: 5px;
+    border-top: solid 5px var(--Red);
+}
+
+.box2>p>img{
+    position: absolute;
+    top: 60%;
+    left: 75%;
+}
+
+.box2>h2{
+    font-family: var(--font-family3);
+    color: var(--Very-Dark-Blue);
+}
+.box2>p{
+    font-family: var(--font-family);
+    color: var(--Grayish-Blue);
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.box3{
+    position: absolute;
+    left: 38%;
+    top: 65%;
+    padding-left: 30px;
+    border-radius: 5px;
+    border-top: solid 5px var(--Orange);
+    
+}
+
+.box3>p>img{
+    position: absolute;
+    top: 60%;
+    left: 75%;
+}
+
+.box3>h2{
+    font-family: var(--font-family3);
+    color: var(--Very-Dark-Blue);
+}
+
+.box3>p{
+    font-family: var(--font-family);
+    color: var(--Grayish-Blue);
+    padding-top: 10px;
+    font-size: 14px;
+    /* padding-right: 25px; */
+}
+
+.box4{
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    padding-left: 30px;
+    border-radius: 5px;
+    border-top: solid 5px var(--Blue);
+    
+}
+
+.box4>p>img{
+    position: absolute;
+    top: 60%;
+    left: 75%;
+}
+
+.box4>h2{
+    font-family: var(--font-family3);
+    color: var(--Very-Dark-Blue);
+}
+
+.box4>p{
+     font-family: var(--font-family);
+    color: var(--Grayish-Blue);
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width:375px) {
+    header{
+        height: 125vh;
+    }
+
+
+
+    main{
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* flex-direction: column; */
+    }    
+
+    .head>h1{
+        flex-direction: row;
+        font-size: 25px;
+    }
+    .head>p{
+        width: 85%;
+        /* text-align: justify; */
+        font-size: 15px;
+        padding-left: 35px;
+    }
+
+    .box1, .box2, .box3, .box4{
+        width: 300px;
+        height: 200px;
+    }
+
+    .box1{
+        padding-left: 25px;
+        top: 27%;
+    }
+    .box1>h2{
+        font-size: 20px;
+    }
+    .box1>p{
+        font-size: 13px;
+    }
+
+    .box2{
+      left: 11%;
+        top: 50%;
+    }
+     .box2>h2{
+        font-size: 20px;
+    }
+    .box2>p{
+        font-size: 13px;
+    }
+
+     .box3{
+      left: 11%;
+        top: 73%;
+    }
+
+    .box3>h2{
+        font-size: 20px;
+    }
+    .box3>p{
+        width: 100%;
+        font-size: 13px;
+    }
+    .box4{
+        left: 11%;
+        top: 96%;
+    }
+    .box4>h2{
+        font-size: 20px;
+    }
+    .box4>p{
+        width: 100%;
+        font-size: 13px;
+    }
+}
